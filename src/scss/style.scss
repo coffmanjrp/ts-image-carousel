@@ -1,0 +1,35 @@
+@import 'config';
+
+.carousel {
+  width: 500px;
+  height: 530px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.5rem;
+  width: 49.5%;
+  background-color: rebeccapurple;
+  border: none;
+  font-family: inherit;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    outline: none;
+  }
+}
