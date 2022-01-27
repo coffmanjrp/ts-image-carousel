@@ -11,7 +11,7 @@ function changeImage() {
     else if (idx < 0) {
         idx = img.length - 1;
     }
-    images.style.transform = "translateX(-" + idx * 100 + "%)";
+    images.style.transform = "translateX(-".concat(idx * 100, "%)");
 }
 function run() {
     idx++;
